@@ -3,24 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f6f0e8">
+  <meta name="theme-color" content="#f4eee7">
   <title>Лев Викторович Соколко — адвокат</title>
   <meta name="description" content="Персональный сайт адвоката Льва Викторовича Соколко. Юридическая помощь, консультации и сопровождение доверителей.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:title" content="Лев Викторович Соколко — адвокат">
-  <meta property="og:description" content="Персональный сайт адвоката Льва Викторовича Соколко. Юридическая помощь, консультации и сопровождение доверителей.">
-  <meta property="og:image" content="/public/hero-portrait.png">
-  <!-- После получения домена замените относительный canonical на полный адрес. -->
+  <meta property="og:description" content="Персональный сайт адвоката Льва Викторовича Соколко.">
+  <meta property="og:image" content="public/hero-reference.svg">
   <link rel="canonical" href="/">
-  <link rel="icon" href="/public/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="public/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Person","name":"Лев Викторович Соколко","jobTitle":"Адвокат","telephone":"+7 926 647-09-71","image":"/public/hero-portrait.png"}
+    {"@context":"https://schema.org","@type":"Person","name":"Лев Викторович Соколко","jobTitle":"Адвокат","telephone":"+7 926 647-09-71","image":"public/hero-reference.svg"}
   </script>
   <script src="script.js" defer></script>
 </head>
@@ -32,76 +30,94 @@
     <symbol id="icon-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="1"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v2"/></symbol>
     <symbol id="icon-dialog" viewBox="0 0 24 24"><path d="M5 6h14v10H9l-4 3V6Z"/><path d="M9 10h6M9 13h4"/></symbol>
     <symbol id="icon-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><path d="M6 20c.5-4 2.5-6 6-6s5.5 2 6 6"/></symbol>
-    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5M8 10.5l1.8 1.8 3.5-4"/></symbol>
     <symbol id="icon-file" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6V3Z"/><path d="M14 3v5h4M9 12h6M9 16h6"/></symbol>
     <symbol id="icon-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M9 7V4h6v3M3 12h18M10 12v2h4v-2"/></symbol>
-    <symbol id="icon-arrows" viewBox="0 0 24 24"><path d="M4 8h14m-3-3 3 3-3 3M20 16H6m3-3-3 3 3 3"/></symbol>
-    <symbol id="icon-eye" viewBox="0 0 24 24"><path d="M3 12s3-5 9-5 9 5 9 5-3 5-9 5-9-5-9-5Z"/><circle cx="12" cy="12" r="2.5"/></symbol>
   </svg>
 
   <header class="site-header" id="site-header">
     <div class="container header-inner">
       <a class="brand" href="#main" aria-label="Лев Викторович Соколко, адвокат — на главную">
         <span class="monogram" aria-hidden="true">ЛС</span>
-        <span class="brand-text"><strong>Лев Викторович Соколко</strong><small>Адвокат</small></span>
+        <span class="brand-text">
+          <strong>Лев Викторович Соколко</strong>
+          <small>Адвокат</small>
+        </span>
       </a>
+
       <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
         <a href="#about">Обо мне</a>
         <a href="#services">Услуги</a>
         <a href="#process">Как работаю</a>
         <a href="#contacts">Контакты</a>
       </nav>
+
       <a class="button button-compact header-action" href="#contacts">Получить консультацию</a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Открыть меню"><span></span><span></span></button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Открыть меню">
+        <span></span><span></span>
+      </button>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero-media" aria-hidden="true">
+        <source media="(max-width: 700px)" srcset="public/hero-reference-mobile.svg">
+        <img
+  src="public/hero-reference.webp"
+  width="1672"
+  height="941"
+  alt="Адвокат Лев Викторович Соколко"
+  fetchpriority="high"
+>
+      </picture>
+
       <div class="container hero-grid">
-        <div class="hero-visual reveal">
-          <div class="hero-image-frame">
-            <picture><source srcset="public/hero-portrait.webp" type="image/webp"><img src="public/hero-portrait.png" width="1672" height="941" alt="Адвокат Лев Викторович Соколко" fetchpriority="high"></picture>
-          </div>
-          <p class="hero-caption">Персональная юридическая помощь</p>
-        </div>
+        <div class="hero-spacer" aria-hidden="true"></div>
         <div class="hero-copy reveal">
-          <p class="eyebrow">Адвокат <i></i> Правовая помощь</p>
-          <h1 id="hero-title">Правовая защита<br>ваших интересов</h1>
-          <p class="hero-lead">Внимательный подход к вашей ситуации, взвешенные решения и понятное сопровождение на каждом этапе.</p>
+          <p class="eyebrow">Персональная правовая помощь</p>
+          <h1 id="hero-title">Ваш адвокат —<br>ваша уверенность<br>онлайн и офлайн</h1>
+          <p class="hero-lead">Человечный подход, понятные решения и защита ваших прав и интересов.</p>
+
           <div class="hero-actions">
             <a class="button" href="#contacts">Получить консультацию</a>
             <a class="button button-secondary" href="tel:+79266470971">Позвонить <span aria-hidden="true">↗</span></a>
           </div>
-          <p class="availability"><span aria-hidden="true"></span>Доступен для первичного обращения</p>
         </div>
       </div>
     </section>
 
     <section class="principles" aria-labelledby="principles-title">
       <div class="container">
-        <h2 class="visually-hidden" id="principles-title">Принципы работы</h2>
+        <h2 class="visually-hidden" id="principles-title">Основные принципы работы</h2>
         <div class="principles-grid">
-          <article class="principle reveal"><svg><use href="#icon-shield"/></svg><div><h3>Защита интересов</h3><p>Последовательная правовая позиция</p></div></article>
-          <article class="principle reveal"><svg><use href="#icon-lock"/></svg><div><h3>Конфиденциальность</h3><p>Деликатное отношение к информации</p></div></article>
-          <article class="principle reveal"><svg><use href="#icon-dialog"/></svg><div><h3>Понятный диалог</h3><p>Объяснение решений без лишней терминологии</p></div></article>
-          <article class="principle reveal"><svg><use href="#icon-person"/></svg><div><h3>Персональный подход</h3><p>Внимание к обстоятельствам ситуации</p></div></article>
+          <article class="principle reveal">
+            <svg><use href="#icon-shield"/></svg>
+            <div><h3>Защита интересов</h3><p>Последовательная правовая позиция</p></div>
+          </article>
+          <article class="principle reveal">
+            <svg><use href="#icon-lock"/></svg>
+            <div><h3>Конфиденциальность</h3><p>Деликатное отношение к информации</p></div>
+          </article>
+          <article class="principle reveal">
+            <svg><use href="#icon-dialog"/></svg>
+            <div><h3>Понятный диалог</h3><p>Без лишней терминологии</p></div>
+          </article>
+          <article class="principle reveal">
+            <svg><use href="#icon-person"/></svg>
+            <div><h3>Персональный подход</h3><p>Внимание к деталям ситуации</p></div>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section about" id="about" aria-labelledby="about-title">
       <div class="container about-grid">
-        <div class="about-visual reveal image-parallax">
-          <picture><source srcset="public/office.webp" type="image/webp"><img src="public/office.png" width="1672" height="941" alt="Спокойный интерьер рабочего кабинета" loading="lazy"></picture>
-          <p>Внимание к обстоятельствам<br>и деталям дела</p>
-        </div>
         <div class="about-copy reveal">
           <p class="eyebrow">Обо мне</p>
           <h2 id="about-title">Профессиональный подход и понятная коммуникация</h2>
           <div class="prose">
             <p>Лев Викторович Соколко — адвокат, оказывающий юридическую помощь с вниманием к деталям, уважением к доверителю и ответственным отношением к каждой ситуации.</p>
-            <p>В работе важны профессиональный подход, конфиденциальность и понятная коммуникация. Доверитель должен понимать, что происходит, какие решения доступны и какие действия последуют дальше.</p>
+            <p>В работе важны профессиональный подход, конфиденциальность и ясное понимание дальнейших действий.</p>
           </div>
           <ol class="about-values">
             <li><span>01</span>Индивидуальный подход</li>
@@ -109,33 +125,47 @@
             <li><span>03</span>Взвешенные решения</li>
           </ol>
         </div>
+
+        <div class="about-visual reveal image-parallax">
+          <picture>
+            <source srcset="public/office.webp" type="image/webp">
+            <img src="public/office.png" width="1672" height="941" alt="Интерьер рабочего кабинета" loading="lazy">
+          </picture>
+          <p>Внимание к обстоятельствам<br>и деталям дела</p>
+        </div>
       </div>
     </section>
 
     <section class="section services" id="services" aria-labelledby="services-title">
       <div class="container">
         <header class="section-intro reveal">
-          <div><p class="eyebrow">Направления работы</p><h2 id="services-title">Юридическая помощь</h2></div>
+          <div>
+            <p class="eyebrow">Направления работы</p>
+            <h2 id="services-title">Юридическая помощь</h2>
+          </div>
           <p>Каждая ситуация требует отдельного анализа и подходящей правовой стратегии.</p>
         </header>
+
         <div class="services-list">
-          <article class="service reveal"><span class="service-number">01</span><svg><use href="#icon-dialog"/></svg><div><h3>Юридические консультации</h3><p>Разъяснение правовых вопросов и возможных вариантов действий.</p></div></article>
-          <article class="service reveal"><span class="service-number">02</span><svg><use href="#icon-search"/></svg><div><h3>Анализ правовой ситуации</h3><p>Изучение обстоятельств, документов и возможных правовых рисков.</p></div></article>
-          <article class="service reveal"><span class="service-number">03</span><svg><use href="#icon-file"/></svg><div><h3>Подготовка документов</h3><p>Подготовка заявлений, обращений и иных правовых документов.</p></div></article>
-          <article class="service reveal"><span class="service-number">04</span><svg><use href="#icon-briefcase"/></svg><div><h3>Представительство интересов</h3><p>Сопровождение и защита согласованной позиции доверителя.</p></div></article>
-          <article class="service reveal"><span class="service-number">05</span><svg><use href="#icon-arrows"/></svg><div><h3>Сопровождение переговоров</h3><p>Правовая поддержка при обсуждении условий и поиске решения.</p></div></article>
-          <article class="service reveal"><span class="service-number">06</span><svg><use href="#icon-eye"/></svg><div><h3>Защита прав доверителя</h3><p>Юридическая помощь с приоритетом ваших законных интересов.</p></div></article>
+          <article class="service reveal"><span>01</span><svg><use href="#icon-dialog"/></svg><div><h3>Юридические консультации</h3><p>Разъяснение правовых вопросов и возможных вариантов действий.</p></div></article>
+          <article class="service reveal"><span>02</span><svg><use href="#icon-file"/></svg><div><h3>Подготовка документов</h3><p>Подготовка заявлений, обращений и иных правовых документов.</p></div></article>
+          <article class="service reveal"><span>03</span><svg><use href="#icon-briefcase"/></svg><div><h3>Представительство интересов</h3><p>Сопровождение и защита согласованной позиции доверителя.</p></div></article>
+          <article class="service reveal"><span>04</span><svg><use href="#icon-shield"/></svg><div><h3>Защита прав доверителя</h3><p>Юридическая помощь с приоритетом ваших законных интересов.</p></div></article>
         </div>
       </div>
     </section>
 
     <section class="section process" id="process" aria-labelledby="process-title">
       <div class="container">
-        <header class="process-heading reveal"><p class="eyebrow eyebrow-light">Порядок взаимодействия</p><h2 id="process-title">Как проходит работа</h2></header>
+        <header class="process-heading reveal">
+          <p class="eyebrow eyebrow-light">Порядок взаимодействия</p>
+          <h2 id="process-title">Как проходит работа</h2>
+        </header>
+
         <ol class="timeline">
           <li class="reveal"><span>01</span><div><h3>Первичное обращение</h3><p>Краткое знакомство с ситуацией и определение основного запроса.</p></div></li>
           <li class="reveal"><span>02</span><div><h3>Анализ обстоятельств</h3><p>Изучение предоставленной информации и доступных документов.</p></div></li>
-          <li class="reveal"><span>03</span><div><h3>Определение дальнейших действий</h3><p>Обсуждение возможных вариантов и формата юридической помощи.</p></div></li>
+          <li class="reveal"><span>03</span><div><h3>Варианты действий</h3><p>Обсуждение возможных решений и формата юридической помощи.</p></div></li>
           <li class="reveal"><span>04</span><div><h3>Сопровождение</h3><p>Работа по согласованному плану и информирование о дальнейших шагах.</p></div></li>
         </ol>
       </div>
@@ -143,13 +173,18 @@
 
     <section class="section atmosphere" aria-labelledby="approach-title">
       <div class="container atmosphere-grid">
+        <div class="atmosphere-image reveal image-parallax">
+          <picture>
+            <source srcset="public/legal-details.webp" type="image/webp">
+            <img src="public/legal-details.png" width="1448" height="1086" alt="Юридическая литература и рабочие материалы" loading="lazy">
+          </picture>
+        </div>
         <div class="atmosphere-copy reveal">
           <p class="eyebrow">Принцип работы</p>
           <h2 id="approach-title">Внимание к существенным обстоятельствам</h2>
           <p>Каждая правовая ситуация требует внимательного изучения обстоятельств и ответственного отношения к деталям.</p>
           <a class="text-link" href="#contacts">Обсудить ситуацию <span aria-hidden="true">→</span></a>
         </div>
-        <div class="atmosphere-image reveal image-parallax"><picture><source srcset="public/legal-details.webp" type="image/webp"><img src="public/legal-details.png" width="1448" height="1086" alt="Рабочие материалы и юридическая литература" loading="lazy"></picture></div>
       </div>
     </section>
 
@@ -158,7 +193,7 @@
         <div class="contact-copy reveal">
           <p class="eyebrow eyebrow-light">Контакты</p>
           <h2 id="contact-title">Обсудить вашу ситуацию</h2>
-          <p>Свяжитесь по указанному номеру. Дополнительные контакты будут размещены после подтверждения данных.</p>
+          <p>Свяжитесь по указанному номеру, чтобы договориться о первичном разговоре.</p>
           <a class="contact-phone" href="tel:+79266470971"><small>Телефон</small>+7 926 647 09 71</a>
           <a class="button button-pale" href="tel:+79266470971">Позвонить сейчас <span aria-hidden="true">↗</span></a>
           <p class="contact-note">Информация, переданная при обращении, используется только для связи с вами.</p>
@@ -167,9 +202,8 @@
         <div class="contact-card reveal">
           <p class="contact-card-label">Контактная информация</p>
           <a href="tel:+79266470971"><span>Телефон</span><strong>+7 926 647 09 71</strong><i aria-hidden="true">↗</i></a>
-          <div class="contact-placeholder"><span>Электронная почта</span><p>Будет добавлена позднее</p></div>
-          <div class="contact-placeholder"><span>Адрес для встреч</span><p>Будет добавлен позднее</p></div>
-          <!-- TODO: заменить плейсхолдеры на подтвержденные email и адрес. -->
+          <div class="contact-placeholder"><span>Электронная почта</span><p>Будет добавлена после согласования</p></div>
+          <div class="contact-placeholder"><span>Адрес для встреч</span><p>Будет добавлен после согласования</p></div>
         </div>
       </div>
     </section>
@@ -177,20 +211,29 @@
 
   <footer class="footer">
     <div class="container footer-main">
-      <a class="brand footer-brand" href="#main"><span class="monogram" aria-hidden="true">ЛС</span><span class="brand-text"><strong>Лев Викторович Соколко</strong><small>Адвокат</small></span></a>
-      <nav aria-label="Навигация в подвале"><a href="#about">Обо мне</a><a href="#services">Услуги</a><a href="#process">Как работаю</a><a href="#contacts">Контакты</a></nav>
+      <a class="brand footer-brand" href="#main">
+        <span class="monogram" aria-hidden="true">ЛС</span>
+        <span class="brand-text"><strong>Лев Викторович Соколко</strong><small>Адвокат</small></span>
+      </a>
+      <nav aria-label="Навигация в подвале">
+        <a href="#about">Обо мне</a>
+        <a href="#services">Услуги</a>
+        <a href="#process">Как работаю</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
       <a class="footer-phone" href="tel:+79266470971">+7 926 647 09 71</a>
     </div>
-    <div class="container footer-bottom"><span>© <span id="year"></span> Лев Викторович Соколко</span><a href="#privacy-policy" class="privacy-link">Политика обработки персональных данных</a></div>
-    <!-- TODO перед публикацией: добавить регистрационные данные адвоката, регион/палату, адрес, email, утвержденную политику и точные направления юридической помощи. -->
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Лев Викторович Соколко</span>
+      <a href="#privacy-policy" class="privacy-link">Политика обработки персональных данных</a>
+    </div>
   </footer>
 
   <dialog class="policy-dialog" id="privacy-policy" aria-labelledby="policy-title">
     <button class="dialog-close" type="button" aria-label="Закрыть окно">×</button>
     <p class="eyebrow">Предварительная версия</p>
     <h2 id="policy-title">Обработка персональных данных</h2>
-    <p>Данные из формы предназначены только для обратной связи по вашему обращению и не должны передаваться третьим лицам без законных оснований.</p>
-    <p><strong>До публикации сайта необходимо предоставить и разместить утверждённый текст политики, сведения об операторе данных и контакты для обращений.</strong></p>
+    <p>До публикации сайта необходимо разместить утверждённый текст политики и сведения об операторе данных.</p>
   </dialog>
 </body>
 </html>
