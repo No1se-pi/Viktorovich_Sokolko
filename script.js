@@ -96,20 +96,5 @@ if (!reduceMotion && 'IntersectionObserver' in window) {
   document.querySelector('.timeline')?.classList.add('line-visible');
 }
 
-const policyDialog = document.querySelector('#privacy-policy');
-const policyLink = document.querySelector('.privacy-link');
-const closeDialogButton = policyDialog?.querySelector('.dialog-close');
-
-policyLink?.addEventListener('click', event => {
-  event.preventDefault();
-  if (typeof policyDialog?.showModal === 'function') policyDialog.showModal();
-});
-
-closeDialogButton?.addEventListener('click', () => policyDialog?.close());
-
-policyDialog?.addEventListener('click', event => {
-  if (event.target === policyDialog) policyDialog.close();
-});
-
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
