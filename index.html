@@ -109,29 +109,34 @@
       </div>
     </section>
 
-    <section class="section about" id="about" aria-labelledby="about-title">
-      <div class="container about-grid">
-        <div class="about-copy reveal">
-          <p class="eyebrow">Обо мне</p>
-          <h2 id="about-title">Профессиональный подход и понятная коммуникация</h2>
-          <div class="prose">
+    <section class="reference-panels" aria-label="Обо мне и обратная связь">
+      <div class="reference-panels-grid">
+        <article class="about-panel reveal" id="about" aria-labelledby="about-title">
+          <div class="about-panel-copy">
+            <h2 id="about-title">Обо мне</h2>
             <p>Лев Викторович Соколко — адвокат, оказывающий юридическую помощь с вниманием к деталям, уважением к доверителю и ответственным отношением к каждой ситуации.</p>
-            <p>В работе важны профессиональный подход, конфиденциальность и ясное понимание дальнейших действий.</p>
+            <p>В работе важны профессиональный подход, конфиденциальность и понятное объяснение дальнейших действий.</p>
+            <a class="button button-compact about-panel-action" href="#services">Подробнее обо мне</a>
           </div>
-          <ol class="about-values">
-            <li><span>01</span>Индивидуальный подход</li>
-            <li><span>02</span>Конфиденциальность обращения</li>
-            <li><span>03</span>Взвешенные решения</li>
-          </ol>
-        </div>
 
-        <div class="about-visual reveal image-parallax">
-          <picture>
-            <source srcset="public/office.webp" type="image/webp">
-            <img src="public/office.png" width="1672" height="941" alt="Интерьер рабочего кабинета" loading="lazy">
+          <picture class="about-still-life">
+            <img src="public/about-still-life.webp" width="1200" height="900" alt="Юридические книги, диплом и весы правосудия" loading="lazy">
           </picture>
-          <p>Внимание к обстоятельствам<br>и деталям дела</p>
-        </div>
+        </article>
+
+        <article class="feedback-panel reveal" id="contacts" aria-labelledby="feedback-title">
+          <div class="feedback-panel-copy">
+            <h2 id="feedback-title">Связаться со мной</h2>
+            <p>Позвоните по указанному номеру, чтобы договориться о первичном разговоре.</p>
+          </div>
+
+          <div class="feedback-contact-card">
+            <p>Телефон для связи</p>
+            <a href="tel:+79266470971">+7 926 647 09 71</a>
+            <a class="button feedback-call" href="tel:+79266470971">Позвонить</a>
+            <small>Дополнительные контакты будут добавлены после согласования.</small>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -187,25 +192,6 @@
       </div>
     </section>
 
-    <section class="section contact" id="contacts" aria-labelledby="contact-title">
-      <div class="container contact-grid">
-        <div class="contact-copy reveal">
-          <p class="eyebrow eyebrow-light">Контакты</p>
-          <h2 id="contact-title">Обсудить вашу ситуацию</h2>
-          <p>Свяжитесь по указанному номеру, чтобы договориться о первичном разговоре.</p>
-          <a class="contact-phone" href="tel:+79266470971"><small>Телефон</small>+7 926 647 09 71</a>
-          <a class="button button-pale" href="tel:+79266470971">Позвонить сейчас <span aria-hidden="true">↗</span></a>
-          <p class="contact-note">Информация, переданная при обращении, используется только для связи с вами.</p>
-        </div>
-
-        <div class="contact-card reveal">
-          <p class="contact-card-label">Контактная информация</p>
-          <a href="tel:+79266470971"><span>Телефон</span><strong>+7 926 647 09 71</strong><i aria-hidden="true">↗</i></a>
-          <div class="contact-placeholder"><span>Электронная почта</span><p>Будет добавлена после согласования</p></div>
-          <div class="contact-placeholder"><span>Адрес для встреч</span><p>Будет добавлен после согласования</p></div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="footer">
