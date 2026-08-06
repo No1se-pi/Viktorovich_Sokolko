@@ -3,22 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f4eee7">
+  <meta name="theme-color" content="#f6f0e8">
   <title>Лев Викторович Соколко — адвокат</title>
   <meta name="description" content="Персональный сайт адвоката Льва Викторовича Соколко. Юридическая помощь, консультации и сопровождение доверителей.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:title" content="Лев Викторович Соколко — адвокат">
   <meta property="og:description" content="Персональный сайт адвоката Льва Викторовича Соколко.">
-  <meta property="og:image" content="public/hero-reference.svg">
+  <meta property="og:image" content="public/hero-reference.webp">
   <link rel="canonical" href="/">
   <link rel="icon" href="public/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="public/hero-reference.webp" as="image" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Person","name":"Лев Викторович Соколко","jobTitle":"Адвокат","telephone":"+7 926 647-09-71","image":"public/hero-reference.svg"}
+    {"@context":"https://schema.org","@type":"Person","name":"Лев Викторович Соколко","jobTitle":"Адвокат","telephone":"+7 926 647-09-71","image":"public/hero-reference.webp"}
   </script>
   <script src="script.js" defer></script>
 </head>
@@ -37,7 +38,6 @@
   <header class="site-header" id="site-header">
     <div class="container header-inner">
       <a class="brand" href="#main" aria-label="Лев Викторович Соколко, адвокат — на главную">
-        <span class="monogram" aria-hidden="true">ЛС</span>
         <span class="brand-text">
           <strong>Лев Викторович Соколко</strong>
           <small>Адвокат</small>
@@ -60,15 +60,14 @@
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <picture class="hero-media" aria-hidden="true">
-        <source media="(max-width: 700px)" srcset="public/hero-reference-mobile.svg">
+      <picture class="hero-media">
         <img
-  src="public/hero-reference.webp"
-  width="1672"
-  height="941"
-  alt="Адвокат Лев Викторович Соколко"
-  fetchpriority="high"
->
+          src="public/hero-reference.webp"
+          width="1672"
+          height="941"
+          alt="Адвокат Лев Викторович Соколко в рабочем кабинете"
+          fetchpriority="high"
+        >
       </picture>
 
       <div class="container hero-grid">
@@ -212,7 +211,6 @@
   <footer class="footer">
     <div class="container footer-main">
       <a class="brand footer-brand" href="#main">
-        <span class="monogram" aria-hidden="true">ЛС</span>
         <span class="brand-text"><strong>Лев Викторович Соколко</strong><small>Адвокат</small></span>
       </a>
       <nav aria-label="Навигация в подвале">

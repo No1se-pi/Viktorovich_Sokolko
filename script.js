@@ -3,6 +3,11 @@ const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('.main-nav');
 const navLinks = navigation ? [...navigation.querySelectorAll('a')] : [];
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const canonicalLink = document.querySelector('link[rel="canonical"]');
+
+if (canonicalLink && /^https?:$/.test(window.location.protocol)) {
+  canonicalLink.href = new URL('/', window.location.origin).href;
+}
 
 function updateHeader() {
   if (header) header.classList.toggle('scrolled', window.scrollY > 18);
