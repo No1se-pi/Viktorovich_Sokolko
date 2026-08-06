@@ -1,20 +1,13 @@
-# Редизайн сайта Льва Викторовича Соколко
+# Сверка с утверждённым референсом
 
-Скопируйте содержимое папки в корень репозитория с заменой `index.html`, `styles.css` и `script.js`.
-Папку `public` объедините с существующей.
+Текущая статическая реализация использует `public/hero-reference.webp` как единственное изображение первого экрана на desktop и mobile.
 
-## Проверка
+Устаревшие SVG-варианты hero и `hero-preview.png` не используются сайтом.
+
+## Локальная проверка
 
 ```powershell
-npx serve .
+python -m http.server 4173
 ```
 
-## Коммит
-
-```bash
-git add index.html styles.css script.js public/hero-reference.svg public/hero-reference-mobile.svg
-git commit -m "match hero design to approved reference"
-git push
-```
-
-`hero-preview.png` — только превью подготовленного первого экрана.
+Откройте `http://127.0.0.1:4173`.
