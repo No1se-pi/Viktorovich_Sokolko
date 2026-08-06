@@ -109,34 +109,27 @@
       </div>
     </section>
 
-    <section class="reference-panels" aria-label="Обо мне и обратная связь">
-      <div class="reference-panels-grid">
-        <article class="about-panel reveal" id="about" aria-labelledby="about-title">
-          <div class="about-panel-copy">
-            <h2 id="about-title">Обо мне</h2>
-            <p>Лев Викторович Соколко — адвокат, оказывающий юридическую помощь с вниманием к деталям, уважением к доверителю и ответственным отношением к каждой ситуации.</p>
-            <p>В работе важны профессиональный подход, конфиденциальность и понятное объяснение дальнейших действий.</p>
-            <a class="button button-compact about-panel-action" href="#services">Подробнее обо мне</a>
-          </div>
+    <section class="about-banner" id="about" aria-labelledby="about-title">
+      <img class="about-banner-image" src="public/long_details.png" width="1916" height="821" alt="Юридические книги, диплом и весы на полке" loading="lazy">
+      <div class="container about-banner-copy reveal">
+        <h2 id="about-title">Обо мне</h2>
+        <p>Лев Викторович Соколко — адвокат, оказывающий юридическую помощь с вниманием к деталям, уважением к доверителю и ответственным отношением к каждой ситуации.</p>
+        <p>В работе важны профессиональный подход, конфиденциальность и понятное объяснение дальнейших действий.</p>
+      </div>
+    </section>
 
-          <picture class="about-still-life">
-            <img src="public/about-still-life.webp" width="1200" height="900" alt="Юридические книги, диплом и весы правосудия" loading="lazy">
-          </picture>
-        </article>
-
-        <article class="feedback-panel reveal" id="contacts" aria-labelledby="feedback-title">
-          <div class="feedback-panel-copy">
-            <h2 id="feedback-title">Связаться со мной</h2>
-            <p>Позвоните по указанному номеру, чтобы договориться о первичном разговоре.</p>
-          </div>
-
-          <div class="feedback-contact-card">
-            <p>Телефон для связи</p>
-            <a href="tel:+79266470971">+7 926 647 09 71</a>
-            <a class="button feedback-call" href="tel:+79266470971">Позвонить</a>
-            <small>Дополнительные контакты будут добавлены после согласования.</small>
-          </div>
-        </article>
+    <section class="contact-strip" id="contacts" aria-labelledby="contact-strip-title">
+      <div class="container contact-strip-grid">
+        <div class="contact-strip-copy reveal">
+          <p class="eyebrow">Контакты</p>
+          <h2 id="contact-strip-title">Связаться со мной</h2>
+          <p>Позвоните, чтобы кратко описать ситуацию и договориться о первичном разговоре.</p>
+        </div>
+        <div class="contact-strip-action reveal">
+          <span>Телефон для связи</span>
+          <a href="tel:+79266470971">+7 926 647 09 71</a>
+          <a class="button" href="tel:+79266470971">Позвонить</a>
+        </div>
       </div>
     </section>
 
@@ -159,6 +152,39 @@
       </div>
     </section>
 
+    <section class="section prepare" aria-labelledby="prepare-title">
+      <div class="container">
+        <header class="section-intro reveal">
+          <div>
+            <p class="eyebrow">Перед разговором</p>
+            <h2 id="prepare-title">Что полезно подготовить</h2>
+          </div>
+          <p>Достаточно собрать основные факты. Остальные детали можно уточнить в ходе разговора.</p>
+        </header>
+
+        <ol class="prepare-grid">
+          <li class="prepare-card reveal">
+            <span class="prepare-number">01</span>
+            <span class="prepare-icon" aria-hidden="true"><svg><use href="#icon-dialog"/></svg></span>
+            <h3>Краткая хронология</h3>
+            <p>Что произошло, в какой последовательности и на какой стадии находится вопрос.</p>
+          </li>
+          <li class="prepare-card reveal">
+            <span class="prepare-number">02</span>
+            <span class="prepare-icon" aria-hidden="true"><svg><use href="#icon-file"/></svg></span>
+            <h3>Связанные документы</h3>
+            <p>Соберите материалы, которые непосредственно относятся к описываемой ситуации.</p>
+          </li>
+          <li class="prepare-card reveal">
+            <span class="prepare-number">03</span>
+            <span class="prepare-icon" aria-hidden="true"><svg><use href="#icon-person"/></svg></span>
+            <h3>Главные вопросы</h3>
+            <p>Отметьте, что важно прояснить и какой результат разговора будет для вас полезен.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
     <section class="section process" id="process" aria-labelledby="process-title">
       <div class="container">
         <header class="process-heading reveal">
@@ -172,6 +198,31 @@
           <li class="reveal"><span>03</span><div><h3>Варианты действий</h3><p>Обсуждение возможных решений и формата юридической помощи.</p></div></li>
           <li class="reveal"><span>04</span><div><h3>Сопровождение</h3><p>Работа по согласованному плану и информирование о дальнейших шагах.</p></div></li>
         </ol>
+      </div>
+    </section>
+
+    <section class="section faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <header class="faq-heading reveal">
+          <p class="eyebrow">Коротко о главном</p>
+          <h2 id="faq-title">Перед обращением</h2>
+          <p>Ответы на практические вопросы о первом разговоре.</p>
+        </header>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary><span>01</span><strong>Что сообщить при первом обращении?</strong><i aria-hidden="true"></i></summary>
+            <p>Кратко опишите события, текущую стадию вопроса и то, что необходимо выяснить. Подробности можно уточнить в разговоре.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary><span>02</span><strong>Какие документы подготовить?</strong><i aria-hidden="true"></i></summary>
+            <p>Подойдут документы и сообщения, которые имеют прямое отношение к ситуации. Точный перечень зависит от обстоятельств.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary><span>03</span><strong>Как определяется дальнейший порядок?</strong><i aria-hidden="true"></i></summary>
+            <p>После ознакомления с основными обстоятельствами можно обсудить возможные действия и подходящий формат юридической помощи.</p>
+          </details>
+        </div>
       </div>
     </section>
 
